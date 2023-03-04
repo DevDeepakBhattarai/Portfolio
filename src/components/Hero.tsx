@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import * as React from "react";
 import { useSelector } from "react-redux";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { RootState } from "../store";

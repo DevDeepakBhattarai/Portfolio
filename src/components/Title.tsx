@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 
 interface Props {
   firstPart: string;

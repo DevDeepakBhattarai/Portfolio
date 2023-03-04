@@ -1,5 +1,5 @@
-import { animationControls, motion, useAnimation } from "framer-motion";
-import React, { ReactElement, useEffect } from "react";
+import { motion } from "framer-motion";
+import { ReactElement } from "react";
 import skills from "../data/Skills.json";
 import Title from "./Title";
 interface Props {}
