@@ -23,7 +23,7 @@ export default function About({}: Props): ReactElement {
             className="-mt-8 md:mt-0 flex items-center justify-center  flex-shrink-0 overflow-hidden"
           >
             <img
-              src={"/deepak.jpeg"}
+              src={prefix + "/deepak.jpeg"}
               className="
               rounded-full md:rounded-2xl
               aspect-auto h-40 w-40 md:h-80 md:w-80 lg:h-96 lg:w-auto object-cover object-top"

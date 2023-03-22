@@ -91,7 +91,7 @@ export default function Navbar({}: Props) {
         animate-[bounce_3s_infinite]
         "
         >
-          <img src="/cross.png" className="h-5/6 w-5/6" alt="" />
+          <img src={prefix + "/cross.png"} className="h-5/6 w-5/6" alt="" />
         </div>
       </motion.ul>
 

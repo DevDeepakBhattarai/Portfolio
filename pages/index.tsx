@@ -12,6 +12,8 @@ import Hero from "../components/Hero";
 import Skills from "../components/Skills";
 import Projects from "../components/Project/Projects";
 import Animation from "../components/Animation";
+const prefix = process.env.NEXT_PUBLIC_PATH || "";
+
 export default function Home() {
   return (
     <>
@@ -50,7 +52,7 @@ export default function Home() {
             href="#home"
             className="absolute animate-[bounce_10s_infinite] bottom-4 left-4 h-8 w-8"
           >
-            <img src="/up.png" alt="" />
+            <img src={prefix + "/up.png"} alt="" />
           </a>
         </div>
       </ErrorBoundary>

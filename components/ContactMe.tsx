@@ -44,7 +44,11 @@ function Socials({ platform, link, index }: SocialsProps) {
       className="socials"
     >
       <span className="sr-only">Follow me on {platform}</span>
-      <img src={prefix + link} className="h-5/6 w-5/6 object-cover" alt="" />
+      <img
+        src={`${prefix}${link}`}
+        className="h-5/6 w-5/6 object-cover"
+        alt=""
+      />
     </motion.div>
   );
 }
