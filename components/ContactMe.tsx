@@ -182,7 +182,7 @@ export default function ContactMe({}: Props): ReactElement {
           initial={{ scale: 1.5 }}
           whileInView={{ scale: 1, transition: { duration: 1 } }}
           viewport={{ once: true }}
-          src="/bg.jpg"
+          src={prefix + "/bg.jpg"}
           className="object-cover overflow-hidden h-screen w-screen object-center absolute -z-50 inset-0"
           alt=""
         />
