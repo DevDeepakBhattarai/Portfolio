@@ -159,7 +159,7 @@ export default function Navbar({ text }: Props) {
             className="navbarIcons"
           >
             {navItem.toLowerCase() !== "blog" && (
-              <a href={`/#${navItem.split(" ")[0].toLowerCase()}`}>{navItem}</a>
+              <a href={`#${navItem.split(" ")[0].toLowerCase()}`}>{navItem}</a>
             )}
             {navItem.toLowerCase() === "blog" && (
               <a href={`/${navItem.toLowerCase()}`}>{navItem}</a>
