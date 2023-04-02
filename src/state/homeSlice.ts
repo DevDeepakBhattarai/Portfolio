@@ -4,7 +4,9 @@ const homeSlice = createSlice({
   initialState: {
     isLoading: true,
     isMobileNavBarOpen: false,
+    isLogoutMenuOpen: false,
   },
+
   reducers: {
     doneLoading: (state) => {
       state.isLoading = false;
@@ -15,8 +17,15 @@ const homeSlice = createSlice({
     closeMobileNavBar: (state) => {
       state.isMobileNavBarOpen = false;
     },
+    setIsLogoutMenuOpen: (state, action) => {
+      state.isLogoutMenuOpen = action.payload;
+    },
   },
 });
-export const { doneLoading, openMobileNavBar, closeMobileNavBar } =
-  homeSlice.actions;
+export const {
+  doneLoading,
+  setIsLogoutMenuOpen,
+  openMobileNavBar,
+  closeMobileNavBar,
+} = homeSlice.actions;
 export default homeSlice.reducer;

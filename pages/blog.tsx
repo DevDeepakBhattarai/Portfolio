@@ -1,12 +1,12 @@
 import React, { ReactElement } from "react";
-import Blog from "../components/Blog/Blog";
+import BlogList from "../components/Blog/BlogList";
 
 interface Props {}
 
 export default function Page({}: Props): ReactElement {
   return (
     <div>
-      <Blog></Blog>
+      <BlogList></BlogList>
     </div>
   );
 }

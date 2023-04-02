@@ -12,18 +12,27 @@ import Hero from "../components/Hero";
 import Skills from "../components/Skills";
 import Projects from "../components/Project/Projects";
 import Animation from "../components/Animation";
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "@/state/store";
+import { setIsLogoutMenuOpen } from "@/state/homeSlice";
 const prefix = process.env.NEXT_PUBLIC_PATH || "";
 
 export default function Home() {
+  const dispatch = useDispatch<AppDispatch>();
   return (
     <>
       <Head>
         <title>Deepak Bhattarai</title>
       </Head>
       <ErrorBoundary>
-        <div className="bg-white snap-y h-screen overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-black scroll-smooth snap-mandatory isolate ">
+        <div
+          onScroll={() => {
+            dispatch(setIsLogoutMenuOpen(false));
+          }}
+          className="bg-white snap-y h-screen overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-black scroll-smooth snap-mandatory isolate "
+        >
           <section id="home">
-            <Navbar></Navbar>
+            <Navbar text="black"></Navbar>
             <div className="relative isolate h-screen flex snap-center scroll-smooth items-center flex-col lg:flex-row-reverse  overflow-hidden">
               {Animation && <Animation></Animation>}
 
@@ -44,7 +53,7 @@ export default function Home() {
           <section id="skills" className="snap-center">
             <Skills></Skills>
           </section>
-          <section id="contact me" className="snap-end scroll-p-4">
+          <section id="contact" className="snap-end scroll-p-4">
             <ContactMe></ContactMe>
           </section>
 

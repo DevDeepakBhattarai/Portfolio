@@ -4,6 +4,7 @@ import { store } from "../src/state/store";
 import { Provider } from "react-redux";
 import Head from "next/head";
 import Script from "next/script";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 const prefix = process.env.NEXT_PUBLIC_PATH || "";
 export default function App({ Component, pageProps }: AppProps) {
   return (
