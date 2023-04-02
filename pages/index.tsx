@@ -23,7 +23,7 @@ export default function Home() {
       <ErrorBoundary>
         <div className="bg-white snap-y h-screen overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-black scroll-smooth snap-mandatory isolate ">
           <section id="home">
-            <Navbar></Navbar>
+            <Navbar text="black"></Navbar>
             <div className="relative isolate h-screen flex snap-center scroll-smooth items-center flex-col lg:flex-row-reverse  overflow-hidden">
               {Animation && <Animation></Animation>}
 
@@ -44,7 +44,7 @@ export default function Home() {
           <section id="skills" className="snap-center">
             <Skills></Skills>
           </section>
-          <section id="contact me" className="snap-end scroll-p-4">
+          <section id="contact" className="snap-end scroll-p-4">
             <ContactMe></ContactMe>
           </section>
 
