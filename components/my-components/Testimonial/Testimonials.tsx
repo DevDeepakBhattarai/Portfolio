@@ -7,7 +7,7 @@ const TestimonialList = [
     giver: "Jasper Jongen",
     status: "Upwork Client",
     feedback:
-      "I requested Deepak to tweak a project and he did a great job at it. Perfectly listened to the provided feedback, gave suggestions where to improve and fast delivery. Very pleasant to work with him. Eager to learn knew things and knowledgeable dev",
+      "I requested Deepak to tweak a project and he did a great job at it. Perfectly listened to the provided feedback, gave suggestions where to improve and fast delivery. Very pleasant to work with him. Eager to learn new things and knowledgeable dev",
     image: "/jasper_jongen.jpg",
   },
   {
