@@ -29,15 +29,17 @@ export default function Footer({}: Props): ReactElement {
 
       <div className="flex flex-col md:flex-row justify-between gap-4 ">
         <div className="space-y-4  lg:space-y-8 flex-1">
-          <div className="flex items-center gap-2 md:gap-4">
-            {" "}
-            <div className="rounded-full border border-black  h-10 md:h-16 aspect-1 grid place-items-center hover:scale-105 transition-all duration-150">
-              <Mail></Mail>
+          <a
+            href="mailto:contact@deepak-bhattarai.com.np"
+            className="flex items-center gap-2 md:gap-4 group"
+          >
+            <div className="rounded-full border border-black h-10 md:h-16 aspect-1 grid place-items-center group-hover:scale-105 transition-all duration-150">
+              <Mail />
             </div>
-            <span className="text-base md:text-xl">
+            <span className="text-base md:text-xl underline-offset-2 group-hover:underline">
               contact@deepak-bhattarai.com.np
             </span>
-          </div>
+          </a>
 
           <div className="flex items-center gap-2 md:gap-4">
             <div className="rounded-full border border-black h-10 md:h-16 aspect-1 grid place-items-center  hover:scale-105 transition-all duration-150">
