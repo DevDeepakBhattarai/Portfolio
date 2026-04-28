@@ -1,12 +1,12 @@
 "use client";
 import {
   motion,
-  AnimationControls,
   stagger,
   useAnimate,
   useAnimation,
   MotionValue,
   useMotionValueEvent,
+  type LegacyAnimationControls,
 } from "framer-motion";
 import Link from "next/link";
 
@@ -159,7 +159,7 @@ export default Navbar;
 function useToggle(
   ref: React.MutableRefObject<HTMLButtonElement | null>,
   open: boolean,
-  controls: AnimationControls,
+  controls: LegacyAnimationControls,
   animate: any,
   navLinks: React.MutableRefObject<HTMLUListElement | null>
 ) {
@@ -226,5 +226,5 @@ function useToggle(
       }
     }
     run();
-  }, [ref?.current, open]);
+  }, [animate, controls, navLinks, open, ref]);
 }

@@ -31,7 +31,7 @@ export default function Hero({}: Props): ReactElement {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "60%"]);
 
   // ! Make the scroll Indicator visible 5 sec after the shapes have loaded
-  const timerRef = useRef<NodeJS.Timeout>();
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
   useEffect(() => {
     if (!hasScrolled) {
       timerRef.current = setTimeout(() => {
@@ -39,7 +39,7 @@ export default function Hero({}: Props): ReactElement {
       }, delay);
     }
     return () => {
-      clearTimeout(timerRef.current);
+      if (timerRef.current) clearTimeout(timerRef.current);
     };
   }, [hasScrolled]);
 

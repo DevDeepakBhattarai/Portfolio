@@ -2,6 +2,7 @@
 import React, { ReactElement } from "react";
 import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 export default function Navbar(): ReactElement {
   return (
     <div className="sticky top-0 flex items-center justify-between text-white h-16 mb-4 backdrop-filter backdrop-blur-lg">
@@ -13,9 +14,11 @@ export default function Navbar(): ReactElement {
         Home
       </Link>
 
-      <img
+      <Image
         src={"/logo.png"}
         alt={"Logo"}
+        width={40}
+        height={40}
         className="h-10 w-10 object-fit object-bottom rounded-full"
       />
     </div>

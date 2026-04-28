@@ -94,7 +94,6 @@ const config = {
   },
   plugins: [
     require("@tailwindcss/typography"),
-    require("tailwindcss-scrollbar"),
     require("tailwindcss-animate"),
     require("@tailwindcss/aspect-ratio"),
     addVariablesForColors,

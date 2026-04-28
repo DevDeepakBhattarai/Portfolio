@@ -22,7 +22,7 @@ const ScrollDownIndicator = ({ scrollYProgress }: Props): ReactElement => {
         duration: 10,
       },
     });
-  }, []);
+  }, [controls]);
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     if (latest !== 0) {
@@ -57,8 +57,6 @@ const ScrollDownIndicator = ({ scrollYProgress }: Props): ReactElement => {
       </div>
     </motion.div>
   );
-  async function display() {}
-  async function hide() {}
 };
 
 export default ScrollDownIndicator;
