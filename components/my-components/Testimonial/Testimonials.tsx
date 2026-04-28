@@ -26,7 +26,7 @@ const TestimonialList = [
     rating: 5,
     feedback:
       "Deepak built our company's product catalog website and absolutely nailed it. The design was clean, the layout made our range easy to browse, and he just got it — barely needed any back-and-forth. Fast, professional, and the end result speaks for itself.",
-    image: "/andrew_lee.jpg",
+    image: "/andrew_lee.png",
   },
   {
     giver: "Helbert Hass",
@@ -35,7 +35,7 @@ const TestimonialList = [
     rating: 5,
     feedback:
       "Building ALLWEONE alongside Deepak has been outstanding. He brings real ownership to the product — not just writing code but thinking through the architecture, the user experience, and the business logic together. The kind of technical co-founder you want in your corner.",
-    image: "/helbert_hass.jpg",
+    image: "/helbert_hass.png",
   },
 ];
 
