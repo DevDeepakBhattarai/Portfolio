@@ -69,35 +69,37 @@ export default function About({}: Props): ReactElement {
                 duration: 1,
               },
             }}
-            className="mx-4 p-2  font-mono text-base text-white md:text-lg"
+            className="mx-4 max-w-3xl space-y-5 p-2 font-mono text-base leading-8 text-white md:text-lg"
           >
-            {"I'm"} a <strong> Full Stack Web Developer</strong> specializing in{" "}
-            <span className="underline decoration-[#61Dbfb] decoration-wavy">
-              React
-            </span>
-            ,{" "}
-            <span className="underline decoration-white decoration-wavy">
-              Next.js
-            </span>
-            ,{" "}
-            <span className="underline decoration-[#3C873A] decoration-wavy">
-              Node JS
-            </span>
-            ,{" "}
-            <span className="underline decoration-[#F5820D] decoration-wavy">
-              Firebase
-            </span>
-            ,and other popular libraries. I have a strong background in creating
-            robust and efficient web applications with a passion for clean and
-            organized code. I am proud to have built a fully functional Facebook
-            clone, which showcases my proficiency in utilizing modern web
-            technologies and frameworks to create complex, feature-rich
-            applications. <br />
             <p>
-              Whether you need a landing page, a blog, an e-commerce site or a
-              custom solution, I can help you achieve your goals. Take a look at
-              some of my projects and feel free to contact me if you have any
-              questions or inquiries.
+              {"I'm"} a <strong>Full Stack Developer</strong> focused on modern
+              AI application engineering:{" "}
+              <span className="underline decoration-golden decoration-wavy">
+                Vercel AI SDK
+              </span>
+              ,{" "}
+              <span className="underline decoration-[#61Dbfb] decoration-wavy">
+                React
+              </span>
+              ,{" "}
+              <span className="underline decoration-white decoration-wavy">
+                Next.js
+              </span>
+              , LangGraph, LangChain, browser agents, document pipelines, and
+              voice-first tools.
+            </p>
+            <p>
+              Recent work includes Allweone, a large AI workspace; a Plasmo
+              browser automation extension; a Gemini-powered computer
+              assistant; Docling/FastAPI document extraction services; Raycast
+              extensions; Plate.js editor systems; and local speech-to-text
+              desktop workflows.
+            </p>
+            <p>
+              I still build the full product surface around the AI layer:
+              authentication, databases, realtime state, polished interfaces,
+              deployment, observability, and the small details that make tools
+              feel reliable.
             </p>
           </motion.div>
         </div>

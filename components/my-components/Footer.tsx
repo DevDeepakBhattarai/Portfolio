@@ -43,7 +43,7 @@ export default function Footer({}: Props): ReactElement {
             <div className="rounded-full border border-black h-10 md:h-16 aspect-1 grid place-items-center  hover:scale-105 transition-all duration-150">
               <MapPin />
             </div>
-            <span className="text-base md:text-xl">Jhapa,Nepal</span>
+            <span className="text-base md:text-xl">Kathmandu Nepal</span>
           </div>
         </div>
 
@@ -65,7 +65,7 @@ export default function Footer({}: Props): ReactElement {
               <span className="sr-only">Github</span>
             </a>
             <a
-              href="https://www.reddit.com/user/DeepakBhattarai69"
+              href="https://www.reddit.com/user/_enma___"
               className="hover:scale-95 transition-transform duration-150 grid place-items-center h-8 w-8 lg:h-16 rounded-full lg:w-16 "
             >
               <Reddit></Reddit>
