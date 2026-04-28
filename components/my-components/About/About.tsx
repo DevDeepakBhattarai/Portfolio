@@ -46,15 +46,15 @@ export default function About({}: Props): ReactElement {
             className="flex flex-shrink-0 items-center justify-center  overflow-hidden md:mt-0"
           >
             <div
-              className="relative  h-40 w-40
-             rounded-full md:h-80 md:w-80 md:rounded-2xl lg:h-96"
+              className="relative h-48 w-48 overflow-hidden
+             rounded-full md:h-96 md:w-96 md:rounded-2xl lg:h-[28rem] lg:w-[28rem]"
             >
               <Image
                 fill
                 src={"/deepak.jpg"}
-                sizes="(min-width: 768px) 20rem,(min-width: 1024px) 24rem, 10rem"
+                sizes="(min-width: 1024px) 28rem, (min-width: 768px) 24rem, 12rem"
                 className="
-              aspect-auto rounded-full
+              aspect-auto scale-110 rounded-full
               object-cover object-top md:rounded-2xl"
                 alt="Image of Deepak Bhattarai, Developer who builds website that are more than just functional"
               />

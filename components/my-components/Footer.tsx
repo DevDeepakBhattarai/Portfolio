@@ -53,7 +53,7 @@ export default function Footer({}: Props): ReactElement {
           <h3 className="text-bold text-lg"> Connect </h3>
           <div className="flex flex-row gap-2 py-4">
             <a
-              href="https://youtube.com/@deepakbhattarai-freelancer?si=BFhVe0NngaQwcRDI"
+              href="https://www.youtube.com/@deepak_the_developer"
               className="hover:scale-95 transition-transform duration-150 grid place-items-center h-8 w-8 lg:h-16 rounded-full lg:w-16"
             >
               <Youtube />

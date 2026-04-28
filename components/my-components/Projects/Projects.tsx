@@ -54,7 +54,7 @@ const projects: Project[] = [
     label: "Flagship AI workspace",
     description:
       "AI workspace with chat, agents, document tools, rich editors, realtime collaboration, and visual canvases.",
-    githubLink: "https://github.com/DevDeepakBhattarai",
+    learnMoreLink: "https://allweone.com",
     categories: ["AI", "WebApp", "Editor"],
     previewImage: ALLWEONEImage,
     accent: "from-emerald-300 to-cyan-400",
@@ -65,7 +65,7 @@ const projects: Project[] = [
     label: "Browser automation extension",
     description:
       "Plasmo extension that inspects pages and performs browser tasks through Chrome APIs and an agent UI.",
-    githubLink: "https://github.com/DevDeepakBhattarai",
+    githubLink: "https://github.com/DevDeepakBhattarai/browser-agent",
     categories: ["AI", "Browser"],
     previewImage: BrowserAgentImage,
     accent: "from-sky-300 to-fuchsia-300",
@@ -76,7 +76,7 @@ const projects: Project[] = [
     label: "Voice-controlled Windows agent",
     description:
       "Wake word detection, browser listening, Gemini intelligence, tool calls, and spoken responses.",
-    githubLink: "https://github.com/DevDeepakBhattarai",
+    githubLink: "https://github.com/DevDeepakBhattarai/computer-assistant",
     categories: ["AI", "Desktop"],
     previewImage: ComputerAssistantImage,
     accent: "from-lime-300 to-orange-300",
@@ -87,7 +87,7 @@ const projects: Project[] = [
     label: "Raycast file conversion",
     description:
       "Convert images, audio, video, and documents from a selected file or clipboard source inside Raycast.",
-    githubLink: "https://github.com/DevDeepakBhattarai",
+    githubLink: "https://github.com/DevDeepakBhattarai/file-forge",
     categories: ["Tools", "Desktop"],
     previewImage: FileForgeRaycastImage,
     accent: "from-violet-300 to-pink-300",
@@ -98,7 +98,7 @@ const projects: Project[] = [
     label: "AI video creation pipeline",
     description:
       "AI stories, Gemini TTS voiceover, stock footage, captions, and final video rendering, fully automated.",
-    githubLink: "https://github.com/DevDeepakBhattarai",
+    githubLink: "https://github.com/DevDeepakBhattarai/reddit-romantics",
     categories: ["AI", "Tools"],
     previewImage: RedditRomanticsImage,
     accent: "from-red-300 to-yellow-300",
@@ -120,7 +120,7 @@ const projects: Project[] = [
     label: "Real-time speech dictation",
     description:
       "Python desktop transcriber that uses Faster Whisper to type spoken words wherever the cursor is focused.",
-    githubLink: "https://github.com/DevDeepakBhattarai/SpeakToType",
+    githubLink: "https://github.com/DevDeepakBhattarai/speak-to-type",
     categories: ["AI", "Desktop", "Tools"],
     previewImage: SpeakToTypeImage,
     accent: "from-teal-200 to-indigo-300",
@@ -131,7 +131,7 @@ const projects: Project[] = [
     label: "AI communication app",
     description:
       "AI-assisted articulation using Google GenAI, LangChain, Zustand, and streaming AI UI patterns.",
-    githubLink: "https://github.com/DevDeepakBhattarai",
+    githubLink: "https://github.com/DevDeepakBhattarai/articulator",
     categories: ["AI", "WebApp"],
     previewImage: ArticulatorImage,
     accent: "from-rose-300 to-amber-300",
@@ -212,7 +212,7 @@ const projects: Project[] = [
     label: "Quick-send browser extension",
     description:
       "Select any text on a page, pick a contact, and open WhatsApp with the message prefilled.",
-    githubLink: "https://github.com/DevDeepakBhattarai",
+    githubLink: "https://github.com/DevDeepakBhattarai/chrome-whatsapp",
     categories: ["Browser", "Tools"],
     previewImage: ChromeWhatsAppImage,
     accent: "from-green-300 to-emerald-500",
@@ -223,7 +223,7 @@ const projects: Project[] = [
     label: "Document intelligence service",
     description:
       "FastAPI microservice converting documents into structured JSON and Markdown with image and table extraction.",
-    githubLink: "https://github.com/DevDeepakBhattarai/uploadthing-py",
+    learnMoreLink: "https://allweone.com/pdf",
     categories: ["AI", "Tools"],
     previewImage: DoclingApiImage,
     accent: "from-stone-200 to-cyan-200",
