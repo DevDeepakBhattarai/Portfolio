@@ -20,7 +20,7 @@ import { useMemo, useState } from "react";
 import FacebookCloneImage from "@/asset/FacebookClone/img1.jpg";
 import SuperGuestImage from "@/asset/superguest/img1.png";
 import AlgorithmVisualizerImage from "@/public/algo-visualizer.png";
-import AllweoneImage from "@/public/allweone-thumbnail.png";
+import ALLWEONEImage from "@/public/allweone-thumbnail.png";
 import OmniServeImage from "@/public/omni-serve-thumbnail.png";
 import PDFReaderImage from "@/public/pdf-reader-showcase.png";
 import PresentationGeneratorImage from "@/public/presentation-generator-thumbnail.png";
@@ -33,7 +33,6 @@ import FileForgeRaycastImage from "@/public/project-thumbnails/file-forge-raycas
 import RedditRomanticsImage from "@/public/project-thumbnails/reddit-romantics.png";
 import SpeakToTypeImage from "@/public/project-thumbnails/speak-to-type.png";
 import UploadThingPyImage from "@/public/project-thumbnails/uploadthing-py.png";
-import VoiceAssistantImage from "@/public/project-thumbnails/voice-assistant.png";
 
 type Category = "WebApp" | "AI" | "Browser" | "Desktop" | "Tools" | "Editor";
 
@@ -51,13 +50,13 @@ type Project = {
 
 const projects: Project[] = [
   {
-    name: "Allweone",
+    name: "ALLWEONE",
     label: "Flagship AI workspace",
     description:
       "AI workspace with chat, agents, document tools, rich editors, realtime collaboration, and visual canvases.",
     githubLink: "https://github.com/DevDeepakBhattarai",
     categories: ["AI", "WebApp", "Editor"],
-    previewImage: AllweoneImage,
+    previewImage: ALLWEONEImage,
     accent: "from-emerald-300 to-cyan-400",
     icon: Layers3,
   },
@@ -229,17 +228,6 @@ const projects: Project[] = [
     previewImage: DoclingApiImage,
     accent: "from-stone-200 to-cyan-200",
     icon: FileText,
-  },
-  {
-    name: "Voice Assistant",
-    label: "Python desktop assistant",
-    description:
-      "Local voice assistant with SpeechRecognition, PyAudio, pyttsx3, tray integration, and Windows APIs.",
-    githubLink: "https://github.com/DevDeepakBhattarai",
-    categories: ["Desktop", "AI"],
-    previewImage: VoiceAssistantImage,
-    accent: "from-green-200 to-sky-300",
-    icon: Bot,
   },
 ];
 

@@ -89,7 +89,7 @@ export default function About({}: Props): ReactElement {
               voice-first tools.
             </p>
             <p>
-              Recent work includes Allweone, a large AI workspace; a Plasmo
+              Recent work includes ALLWEONE, a large AI workspace; a Plasmo
               browser automation extension; a Gemini-powered computer
               assistant; Docling/FastAPI document extraction services; Raycast
               extensions; Plate.js editor systems; and local speech-to-text

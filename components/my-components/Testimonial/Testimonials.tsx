@@ -42,7 +42,7 @@ const TestimonialList = [
 export default function Testimonials() {
   const [a, b, c, d] = TestimonialList;
   return (
-    <div className="mx-auto w-full max-w-5xl px-4">
+    <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
       {/* Row 1: wide | narrow */}
       <div className="mb-4 grid grid-cols-1 gap-4 md:grid-cols-3">
         <div className="md:col-span-2">

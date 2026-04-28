@@ -123,7 +123,7 @@ function SkillPill({ skill, image, logoSurface = "dark" }: SkillItem) {
 export default function Skills(): ReactElement {
   return (
     <section id="skills" className="relative z-50 bg-black py-24 text-white">
-      <div className="mx-auto max-w-5xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mb-16">
           <p className="mb-4 font-mono text-xs uppercase tracking-[0.35em] text-golden">
             Stack
