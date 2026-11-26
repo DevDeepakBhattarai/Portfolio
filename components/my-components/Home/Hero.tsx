@@ -120,7 +120,12 @@ const terminalLines: Array<{ id: string; render: () => React.ReactNode }> = [
   },
 ];
 
-const socials = ["GH", "LI", "TW"];
+const socials = [
+  { label: "GH", name: "GitHub", href: "https://github.com/DevDeepakBhattarai" },
+  { label: "LI", name: "LinkedIn", href: "https://www.linkedin.com/in/developer-deepak-bhattarai/" },
+  { label: "X", name: "X (Twitter)", href: "https://x.com/nerd_deepak" },
+  { label: "YT", name: "YouTube", href: "https://www.youtube.com/@nerd_deepak" },
+];
 
 export default function Hero() {
   const [hasScrolled, setHasScrolled]     = useState(false);
@@ -183,9 +188,16 @@ export default function Hero() {
       >
         <div className="w-px h-16 bg-gradient-to-b from-transparent to-white/10" />
         {socials.map((s) => (
-          <span key={s} className="text-white/20 text-[9px] font-mono tracking-[0.3em] rotate-90 cursor-pointer hover:text-golden/60 transition-colors duration-300">
-            {s}
-          </span>
+          <a
+            key={s.label}
+            href={s.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={s.name}
+            className="text-white/25 text-[9px] font-mono tracking-[0.3em] rotate-90 cursor-pointer hover:text-golden/70 transition-colors duration-300"
+          >
+            {s.label}
+          </a>
         ))}
         <div className="w-px h-16 bg-gradient-to-t from-transparent to-white/10" />
       </motion.div>
@@ -198,7 +210,9 @@ export default function Hero() {
         className="absolute right-6 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-center gap-5"
       >
         <div className="w-px h-16 bg-gradient-to-b from-transparent to-white/10" />
-        <span className="text-white/40 text-[9px] font-mono tracking-widest rotate-90 whitespace-nowrap">© 2025</span>
+        <span className="text-white/40 text-[9px] font-mono tracking-widest rotate-90 whitespace-nowrap">
+          © {new Date().getFullYear()}
+        </span>
         <div className="w-px h-16 bg-gradient-to-t from-transparent to-white/10" />
       </motion.div>
 

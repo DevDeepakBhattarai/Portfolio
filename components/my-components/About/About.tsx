@@ -1,14 +1,8 @@
 "use client";
-import React, { ReactElement, useRef, useState } from "react";
-import {
-  motion,
-  useAnimation,
-  useMotionValueEvent,
-  useScroll,
-} from "framer-motion";
+import React, { ReactElement, useRef } from "react";
+import { motion, useScroll } from "framer-motion";
 import Image from "next/image";
 import Navbar from "../Navbar/Main";
-import ScrollDownIndicator from "@/components/ui/ScrollDownIndicator";
 interface Props {}
 
 export default function About({}: Props): ReactElement {
@@ -56,7 +50,7 @@ export default function About({}: Props): ReactElement {
                 className="
               aspect-auto scale-110 rounded-full
               object-cover object-top md:rounded-2xl"
-                alt="Image of Deepak Bhattarai, Developer who builds website that are more than just functional"
+                alt="Image of Deepak Bhattarai, Developer who builds websites that are more than just functional"
               />
             </div>
           </motion.div>
@@ -72,8 +66,9 @@ export default function About({}: Props): ReactElement {
             className="mx-4 max-w-3xl space-y-5 p-2 font-mono text-base leading-8 text-white md:text-lg"
           >
             <p>
-              {"I'm"} a <strong>Full Stack Developer</strong> focused on modern
-              AI application engineering:{" "}
+              {"I'm"} a <strong>Full Stack &amp; AI Developer</strong> and
+              Co-Founder &amp; CTO at <strong>ALLWEONE</strong>, focused on
+              modern AI application engineering:{" "}
               <span className="underline decoration-golden decoration-wavy">
                 Vercel AI SDK
               </span>
@@ -85,15 +80,15 @@ export default function About({}: Props): ReactElement {
               <span className="underline decoration-white decoration-wavy">
                 Next.js
               </span>
-              , LangGraph, LangChain, browser agents, document pipelines, and
-              voice-first tools.
+              , LangGraph, agentic harnesses, MCP servers, browser agents, and
+              local-first AI tools.
             </p>
             <p>
-              Recent work includes ALLWEONE, a large AI workspace; a Plasmo
-              browser automation extension; a Gemini-powered computer
-              assistant; Docling/FastAPI document extraction services; Raycast
-              extensions; Plate.js editor systems; and local speech-to-text
-              desktop workflows.
+              Recent work includes ALLWEONE (18,600+ users across web and
+              Electron desktop), an open-source AI presentation generator with
+              3,000+ GitHub stars, a hardened local MCP computer-control server,
+              CUDA-accelerated Raycast extensions, an iPhone LiDAR cinematic
+              recorder, Docling document pipelines, and Plate.js editor systems.
             </p>
             <p>
               I still build the full product surface around the AI layer:

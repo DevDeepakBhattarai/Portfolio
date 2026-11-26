@@ -4,15 +4,19 @@ import { AnimatePresence, motion, type Variants } from "framer-motion";
 import {
   ArrowUpRight,
   Bot,
+  Camera,
   Code2,
   FileCode2,
   FileText,
   Layers3,
+  Mic,
   MonitorCog,
   PanelsTopLeft,
   Presentation,
+  Server,
   Sparkles,
   TerminalSquare,
+  Wand2,
 } from "lucide-react";
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
@@ -39,6 +43,7 @@ type Category = "WebApp" | "AI" | "Browser" | "Desktop" | "Tools" | "Editor";
 type Project = {
   name: string;
   label: string;
+  badge?: string;
   description: string;
   categories: Category[];
   githubLink?: string;
@@ -52,13 +57,68 @@ const projects: Project[] = [
   {
     name: "ALLWEONE",
     label: "Flagship AI workspace",
+    badge: "18k+ users",
     description:
-      "AI workspace with chat, agents, document tools, rich editors, realtime collaboration, and visual canvases.",
+      "AI workspace and marketplace (web + Electron desktop) serving 18,600+ users with chat, agents, docs, rich editors, local inference, and visual canvases.",
     learnMoreLink: "https://allweone.com",
-    categories: ["AI", "WebApp", "Editor"],
+    categories: ["AI", "WebApp", "Desktop", "Editor"],
     previewImage: ALLWEONEImage,
     accent: "from-emerald-300 to-cyan-400",
     icon: Layers3,
+  },
+  {
+    name: "Presentation Generator",
+    label: "Open-source Gamma alternative",
+    badge: "3,000+ ★",
+    description:
+      "Open-source AI slide builder with 38+ themes, Plate.js editing, PPTX import/export, AI images, and cloud or local Ollama/LM Studio models.",
+    learnMoreLink: "https://presentation.allweone.com",
+    githubLink: "https://github.com/allweonedev/presentation-ai",
+    categories: ["AI", "WebApp", "Editor"],
+    previewImage: PresentationGeneratorImage,
+    accent: "from-blue-200 to-emerald-300",
+    icon: Presentation,
+  },
+  {
+    name: "Local Computer Control MCP",
+    label: "Hardened MCP server",
+    badge: "MCP",
+    description:
+      "Streamable HTTP MCP server with OAuth 2.0/PKCE, Chrome & Electron CDP control, Voice controls, and bounded agent task delegation.",
+    githubLink: "https://github.com/DevDeepakBhattarai/win-codex",
+    categories: ["AI", "Desktop", "Tools"],
+    accent: "from-amber-300 to-orange-400",
+    icon: Server,
+  },
+  {
+    name: "iPhone Depth Recorder",
+    label: "LiDAR cinematic capture",
+    description:
+      "Objective-C iPhone 12 Pro Max RGB-D LiDAR recorder with OBS usbmux sync, UTC nanosecond timestamps, USB transfer, and Windows DOF rendering.",
+    githubLink: "https://github.com/DevDeepakBhattarai/iPhoneDepthRecorder",
+    categories: ["Desktop", "Tools"],
+    accent: "from-sky-300 to-indigo-400",
+    icon: Camera,
+  },
+  {
+    name: "Local Transcribe for Raycast",
+    label: "Private CUDA transcription",
+    description:
+      "Local Faster-Whisper Large v3 Turbo and Meta NLLB-200 translation with timestamped SRT/VTT subtitle export for Raycast on Windows.",
+    githubLink: "https://github.com/DevDeepakBhattarai/raycast-local-transcribe",
+    categories: ["AI", "Desktop", "Tools"],
+    accent: "from-emerald-300 to-teal-400",
+    icon: Mic,
+  },
+  {
+    name: "BG Remove for Raycast",
+    label: "Local CUDA / Tensor Core AI",
+    description:
+      "Private local background removal for Raycast powered by BiRefNet and ONNX Runtime with FP16 Tensor Core and DirectML acceleration.",
+    githubLink: "https://github.com/DevDeepakBhattarai/background-remover",
+    categories: ["AI", "Desktop", "Tools"],
+    accent: "from-fuchsia-300 to-violet-400",
+    icon: Wand2,
   },
   {
     name: "Browser Agent",
@@ -97,7 +157,7 @@ const projects: Project[] = [
     name: "Reddit Romantics",
     label: "AI video creation pipeline",
     description:
-      "AI stories, Gemini TTS voiceover, stock footage, captions, and final video rendering, fully automated.",
+      "AI stories, local Fish Audio / VibeVoice & Gemini TTS voiceover, WhisperX captions, and automated long-form + Shorts rendering.",
     githubLink: "https://github.com/DevDeepakBhattarai/reddit-romantics",
     categories: ["AI", "Tools"],
     previewImage: RedditRomanticsImage,
@@ -136,17 +196,6 @@ const projects: Project[] = [
     previewImage: ArticulatorImage,
     accent: "from-rose-300 to-amber-300",
     icon: Sparkles,
-  },
-  {
-    name: "Presentation Generator",
-    label: "AI slide deck builder",
-    description:
-      "Open-source Gamma-style app that generates outlines, editable slides, themes, images, and presentation mode.",
-    githubLink: "https://github.com/allweonedev/presentation-ai",
-    categories: ["AI", "WebApp", "Editor"],
-    previewImage: PresentationGeneratorImage,
-    accent: "from-blue-200 to-emerald-300",
-    icon: Presentation,
   },
   {
     name: "Facebook Clone",
@@ -201,7 +250,8 @@ const projects: Project[] = [
     label: "Service marketplace platform",
     description:
       "Book experts and local services with scheduling, payments, chat, and Agora audio/video sessions.",
-    githubLink: "https://github.com/DevDeepakBhattarai",
+    learnMoreLink: "https://omni-serve-web.vercel.app",
+    githubLink: "https://github.com/DevDeepakBhattarai/OmniServe",
     categories: ["WebApp", "Tools"],
     previewImage: OmniServeImage,
     accent: "from-cyan-300 to-lime-300",
@@ -224,6 +274,7 @@ const projects: Project[] = [
     description:
       "FastAPI microservice converting documents into structured JSON and Markdown with image and table extraction.",
     learnMoreLink: "https://allweone.com/pdf",
+    githubLink: "https://github.com/DevDeepakBhattarai/docling-demo",
     categories: ["AI", "Tools"],
     previewImage: DoclingApiImage,
     accent: "from-stone-200 to-cyan-200",
@@ -263,9 +314,13 @@ function ProjectVisual({ project }: { project: Project }) {
 
   return (
     <div className="relative aspect-[16/10] w-full overflow-hidden bg-zinc-950">
-      <div className={`absolute inset-0 bg-gradient-to-br ${project.accent} opacity-[0.13] transition-opacity duration-300 group-hover:opacity-20`} />
+      <div
+        className={`absolute inset-0 bg-gradient-to-br ${project.accent} opacity-[0.13] transition-opacity duration-300 group-hover:opacity-20`}
+      />
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className={`grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br ${project.accent} shadow-lg`}>
+        <div
+          className={`grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br ${project.accent} shadow-lg`}
+        >
           <Icon size={22} className="text-black/70" strokeWidth={2.5} />
         </div>
       </div>
@@ -340,7 +395,14 @@ export default function Projects() {
 
                 <div className="flex flex-1 flex-col gap-3 p-5">
                   <div>
-                    <h3 className="text-base font-bold leading-snug">{project.name}</h3>
+                    <div className="flex items-center justify-between gap-2">
+                      <h3 className="text-base font-bold leading-snug">{project.name}</h3>
+                      {project.badge && (
+                        <span className="shrink-0 rounded-full border border-golden/30 bg-golden/10 px-2 py-0.5 font-mono text-[0.65rem] font-semibold tracking-wide text-golden">
+                          {project.badge}
+                        </span>
+                      )}
+                    </div>
                     <p className="mt-0.5 font-mono text-[0.65rem] uppercase tracking-wider text-zinc-600">
                       {project.label}
                     </p>
@@ -351,14 +413,24 @@ export default function Projects() {
                   </p>
 
                   <div className="mt-auto flex items-center gap-5 pt-1">
-                    {project.learnMoreLink && (
-                      <Link
-                        href={project.learnMoreLink}
-                        className="text-sm font-semibold text-white/80 underline-offset-4 transition-colors hover:text-white hover:underline"
-                      >
-                        View project
-                      </Link>
-                    )}
+                    {project.learnMoreLink &&
+                      (project.learnMoreLink.startsWith("http") ? (
+                        <a
+                          href={project.learnMoreLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-semibold text-white/80 underline-offset-4 transition-colors hover:text-white hover:underline"
+                        >
+                          View project
+                        </a>
+                      ) : (
+                        <Link
+                          href={project.learnMoreLink}
+                          className="text-sm font-semibold text-white/80 underline-offset-4 transition-colors hover:text-white hover:underline"
+                        >
+                          View project
+                        </Link>
+                      ))}
                     {project.githubLink && (
                       <a
                         href={project.githubLink}

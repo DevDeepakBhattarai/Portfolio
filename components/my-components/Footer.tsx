@@ -45,7 +45,7 @@ export default function Footer({}: Props): ReactElement {
             <div className="rounded-full border border-black h-10 md:h-16 aspect-1 grid place-items-center  hover:scale-105 transition-all duration-150">
               <MapPin />
             </div>
-            <span className="text-base md:text-xl">Kathmandu Nepal</span>
+            <span className="text-base md:text-xl">Kathmandu, Nepal</span>
           </div>
         </div>
 
@@ -53,28 +53,36 @@ export default function Footer({}: Props): ReactElement {
           <h3 className="text-bold text-lg"> Connect </h3>
           <div className="flex flex-row gap-2 py-4">
             <a
-              href="https://www.youtube.com/@deepak_the_developer"
+              href="https://www.youtube.com/@nerd_deepak"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:scale-95 transition-transform duration-150 grid place-items-center h-8 w-8 lg:h-16 rounded-full lg:w-16"
             >
               <Youtube />
-              <span className="sr-only">Youtube</span>
+              <span className="sr-only">YouTube</span>
             </a>
             <a
               href="https://github.com/DevDeepakBhattarai"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:scale-90 transition-transform duration-150 scale-95 grid place-items-center h-8 w-8 lg:h-16 rounded-full lg:w-16"
             >
               <Github />
-              <span className="sr-only">Github</span>
+              <span className="sr-only">GitHub</span>
             </a>
             <a
               href="https://www.reddit.com/user/_enma___"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:scale-95 transition-transform duration-150 grid place-items-center h-8 w-8 lg:h-16 rounded-full lg:w-16 "
             >
               <Reddit></Reddit>
               <span className="sr-only">Reddit</span>
             </a>
             <a
-              href="https://twitter.com/deepak_the_dev"
+              href="https://x.com/nerd_deepak"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:scale-95 transition-transform duration-150 grid place-items-center h-8 w-8 lg:h-16 rounded-full lg:w-16"
             >
               <X></X>
@@ -82,10 +90,12 @@ export default function Footer({}: Props): ReactElement {
             </a>
             <a
               href="https://www.linkedin.com/in/developer-deepak-bhattarai/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:scale-95 transition-transform duration-150 grid place-items-center h-8 w-8 lg:h-16 rounded-full lg:w-16"
             >
               <Linkedin></Linkedin>
-              <span className="sr-only">Linkedin</span>
+              <span className="sr-only">LinkedIn</span>
             </a>
           </div>
         </div>

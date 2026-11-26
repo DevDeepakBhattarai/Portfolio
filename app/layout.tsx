@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 const description =
-  "Full-stack Web developer who builds website that are more than just functional.Proficient in React, Next.js, Prisma, Python, and adept at integrating ChatGPT and various other web and AI frameworks to create innovative and dynamic online experiences.";
+  "Full-stack web and AI engineer and Co-Founder & CTO at ALLWEONE. Building websites and AI products that are more than just functional — from AI workspaces and local MCP servers to Next.js, TypeScript, Python, and PostgreSQL systems.";
 const ogImageURL = "/deepak-opengraph.jpg";
 const title = "Deepak Bhattarai";
 export const metadata: Metadata = {
@@ -19,13 +19,16 @@ export const metadata: Metadata = {
   creator: "Deepak Bhattarai",
   keywords: [
     "Deepak Bhattarai",
+    "ALLWEONE",
     "Portfolio Website",
-    "Best Portfolio Website",
     "AI Developer",
+    "Full Stack AI Engineer",
     "Web Developer",
     "Nepali Web Developer",
+    "Next.js Developer",
     "React Developer",
-    "ChatGPT Integration",
+    "Agentic Engineering",
+    "MCP",
   ],
   robots: { index: true, follow: true },
   openGraph: {
@@ -38,7 +41,7 @@ export const metadata: Metadata = {
     images: { url: ogImageURL, alt: `Image of ${title}` },
     title: title,
     description: description,
-    creator: "@deepak_the_dev",
+    creator: "@nerd_deepak",
   },
 };
 

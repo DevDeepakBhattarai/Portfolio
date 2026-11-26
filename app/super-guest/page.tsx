@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     images: { url: ogImageURL, alt: `Preview Image of ${title}` },
     title: title,
     description: description,
-    creator: "@deeepak_the_dev",
+    creator: "@nerd_deepak",
   },
 };
 export default function SuperGuestPage({}: Props): ReactElement {
