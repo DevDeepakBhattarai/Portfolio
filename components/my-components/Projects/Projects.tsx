@@ -29,11 +29,15 @@ import OmniServeImage from "@/public/omni-serve-thumbnail.png";
 import PDFReaderImage from "@/public/pdf-reader-showcase.png";
 import PresentationGeneratorImage from "@/public/presentation-generator-thumbnail.png";
 import ArticulatorImage from "@/public/project-thumbnails/articulator.png";
+import BackgroundRemoverImage from "@/public/project-thumbnails/background-remover.png";
 import BrowserAgentImage from "@/public/project-thumbnails/browser-agent.png";
 import ChromeWhatsAppImage from "@/public/project-thumbnails/chrome-whatsapp.png";
 import ComputerAssistantImage from "@/public/project-thumbnails/computer-assistant.png";
 import DoclingApiImage from "@/public/project-thumbnails/docling-api.png";
 import FileForgeRaycastImage from "@/public/project-thumbnails/file-forge-raycast.png";
+import IPhoneDepthRecorderImage from "@/public/project-thumbnails/iphone-depth-recorder.png";
+import LocalComputerControlMcpImage from "@/public/project-thumbnails/local-computer-control-mcp.png";
+import RaycastLocalTranscribeImage from "@/public/project-thumbnails/raycast-local-transcribe.png";
 import RedditRomanticsImage from "@/public/project-thumbnails/reddit-romantics.png";
 import SpeakToTypeImage from "@/public/project-thumbnails/speak-to-type.png";
 import UploadThingPyImage from "@/public/project-thumbnails/uploadthing-py.png";
@@ -87,6 +91,7 @@ const projects: Project[] = [
       "Streamable HTTP MCP server with OAuth 2.0/PKCE, Chrome & Electron CDP control, Voice controls, and bounded agent task delegation.",
     githubLink: "https://github.com/DevDeepakBhattarai/win-codex",
     categories: ["AI", "Desktop", "Tools"],
+    previewImage: LocalComputerControlMcpImage,
     accent: "from-amber-300 to-orange-400",
     icon: Server,
   },
@@ -97,6 +102,7 @@ const projects: Project[] = [
       "Objective-C iPhone 12 Pro Max RGB-D LiDAR recorder with OBS usbmux sync, UTC nanosecond timestamps, USB transfer, and Windows DOF rendering.",
     githubLink: "https://github.com/DevDeepakBhattarai/iPhoneDepthRecorder",
     categories: ["Desktop", "Tools"],
+    previewImage: IPhoneDepthRecorderImage,
     accent: "from-sky-300 to-indigo-400",
     icon: Camera,
   },
@@ -107,6 +113,7 @@ const projects: Project[] = [
       "Local Faster-Whisper Large v3 Turbo and Meta NLLB-200 translation with timestamped SRT/VTT subtitle export for Raycast on Windows.",
     githubLink: "https://github.com/DevDeepakBhattarai/raycast-local-transcribe",
     categories: ["AI", "Desktop", "Tools"],
+    previewImage: RaycastLocalTranscribeImage,
     accent: "from-emerald-300 to-teal-400",
     icon: Mic,
   },
@@ -117,6 +124,7 @@ const projects: Project[] = [
       "Private local background removal for Raycast powered by BiRefNet and ONNX Runtime with FP16 Tensor Core and DirectML acceleration.",
     githubLink: "https://github.com/DevDeepakBhattarai/background-remover",
     categories: ["AI", "Desktop", "Tools"],
+    previewImage: BackgroundRemoverImage,
     accent: "from-fuchsia-300 to-violet-400",
     icon: Wand2,
   },

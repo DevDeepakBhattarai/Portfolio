@@ -50,7 +50,7 @@ export default function About({}: Props): ReactElement {
                 className="
               aspect-auto scale-110 rounded-full
               object-cover object-top md:rounded-2xl"
-                alt="Image of Deepak Bhattarai, Developer who builds websites that are more than just functional"
+                alt="Portrait of Deepak Bhattarai"
               />
             </div>
           </motion.div>
@@ -66,35 +66,26 @@ export default function About({}: Props): ReactElement {
             className="mx-4 max-w-3xl space-y-5 p-2 font-mono text-base leading-8 text-white md:text-lg"
           >
             <p>
-              {"I'm"} a <strong>Full Stack &amp; AI Developer</strong> and
-              Co-Founder &amp; CTO at <strong>ALLWEONE</strong>, focused on
-              modern AI application engineering:{" "}
+              {"I'm"} <strong>Deepak</strong>. I started messing around with
+              code at 15 because of Minecraft, and somehow never stopped. Most
+              of what I know came from taking things apart to see how they work
+              —{" "}
               <span className="underline decoration-golden decoration-wavy">
-                Vercel AI SDK
-              </span>
-              ,{" "}
-              <span className="underline decoration-[#61Dbfb] decoration-wavy">
-                React
-              </span>
-              ,{" "}
-              <span className="underline decoration-white decoration-wavy">
-                Next.js
-              </span>
-              , LangGraph, agentic harnesses, MCP servers, browser agents, and
-              local-first AI tools.
+                reverse engineering
+              </span>{" "}
+              instead of waiting to be taught.
             </p>
             <p>
-              Recent work includes ALLWEONE (18,600+ users across web and
-              Electron desktop), an open-source AI presentation generator with
-              3,000+ GitHub stars, a hardened local MCP computer-control server,
-              CUDA-accelerated Raycast extensions, an iPhone LiDAR cinematic
-              recorder, Docling document pipelines, and Plate.js editor systems.
+              These days I co-run <strong>ALLWEONE</strong>, build random tools
+              whenever something annoys me enough to fix it myself, and share
+              what {"I'm"} figuring out on YouTube. Plenty of what I make never
+              even makes it to GitHub — I just enjoy making things that feel
+              good to use.
             </p>
             <p>
-              I still build the full product surface around the AI layer:
-              authentication, databases, realtime state, polished interfaces,
-              deployment, observability, and the small details that make tools
-              feel reliable.
+              Outside of screens, {"I'm"} always down for late-night rabbit
+              holes about life, space, consciousness, god, aliens, and
+              everything in between.
             </p>
           </motion.div>
         </div>
