@@ -47,9 +47,7 @@ export default function About({}: Props): ReactElement {
                 fill
                 src={"/deepak.jpg"}
                 sizes="(min-width: 1024px) 28rem, (min-width: 768px) 24rem, 12rem"
-                className="
-              aspect-auto scale-110 rounded-full
-              object-cover object-top md:rounded-2xl"
+                className="rounded-full object-cover object-center md:rounded-2xl"
                 alt="Portrait of Deepak Bhattarai"
               />
             </div>
